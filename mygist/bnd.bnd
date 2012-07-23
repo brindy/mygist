@@ -1,0 +1,6 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	com.vaadin
+-sub: *.bnd
+-runframework: org.apache.felix.framework;version='[4.0.3,4.0.3]'

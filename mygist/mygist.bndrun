@@ -1,0 +1,40 @@
+-runfw: org.apache.felix.framework;version='[4,5)'
+-runee: JavaSE-1.6
+
+-runbundles: org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)',\
+	mygist.api;version=latest,\
+	mygist.theme;version=latest,\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	mygist.formatters;version=latest,\
+	javax.servlet;version='[2.5.0,2.5.1)',\
+	mygist.app;version=latest,\
+	org.vaadin.osgi.staticres;version='[2.0.0,2.0.1)',\
+	org.apache.felix.metatype;version='[1.0.4,1.0.5)',\
+	org.apache.felix.webconsole;version='[3.1.8,3.1.9)',\
+	org.apache.felix.gogo.command;version='[0.12.0,0.12.1)',\
+	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
+	com.vaadin;version='[6.8.0,6.8.1)',\
+	org.vaadin.osgi;version='[2.0.0,2.0.1)',\
+	org.apache.felix.http.jetty;version='[2.2.0,2.2.1)',\
+	org.apache.felix.configadmin;version='[1.4.0,1.4.1)',\
+	org.apache.felix.scr;version='[1.6.0,1.6.1)',\
+	osgi.cmpn;version='[4.2.0,4.2.1)'
+
+## Uncomment if you need to change the HTTP port
+#-runproperties: org.osgi.service.http.port=8080
+
+-runrequires: osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.webconsole)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.configadmin)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.metatype)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.log)',\
+	osgi.identity;filter:='(&(osgi.identity=osgi.cmpn)(version>=4.2))',\
+	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.scr)(version>=1.6.0))',\
+	osgi.identity;filter:='(osgi.identity=mygist.api)',\
+	osgi.identity;filter:='(osgi.identity=mygist.app)',\
+	osgi.identity;filter:='(osgi.identity=mygist.formatters)',\
+	osgi.identity;filter:='(osgi.identity=mygist.theme)',\
+	osgi.identity;filter:='(osgi.identity=com.vaadin)',\
+	osgi.identity;filter:='(osgi.identity=org.vaadin.osgi)',\
+	osgi.identity;filter:='(osgi.identity=org.vaadin.osgi.staticres)'

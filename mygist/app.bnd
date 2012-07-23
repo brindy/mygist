@@ -1,0 +1,2 @@
+Private-Package: com.brindysoft.mygist.app
+Service-Component: *

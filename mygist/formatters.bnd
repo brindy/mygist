@@ -1,0 +1,4 @@
+Private-Package: com.brindysoft.mygist.formatter.html,\
+	com.brindysoft.mygist.formatter.java,\
+	com.brindysoft.mygist.formatter.text
+Service-Component: *

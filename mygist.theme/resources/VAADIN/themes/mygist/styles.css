@@ -1,0 +1,46 @@
+
+@import url('../reindeer/styles.css');
+
+.gist-file-title 
+{
+
+	padding-left: 10px;
+	padding-top: 5px;
+	background-color: #ccc;
+	height: 25px;
+	border-bottom: solid 1px black;
+	
+}
+
+.line-numbers 
+{
+	
+	background-color: #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	text-align: right;
+}
+
+.code 
+{
+	
+	background-color: #eee;
+	padding-left: 5px;
+	
+}
+
+.code span,
+.line-numbers span
+{
+	font-family: courier;	
+}
+
+.code-layout {
+	
+	overflow-x: scroll;
+    white-space: nowrap;
+    font-family: courier;
+    
+}
+
